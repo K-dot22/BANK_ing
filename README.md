@@ -138,31 +138,27 @@ Base URL: `http://localhost:5000/api`
 
 ---
 
-## 5) Step-by-Step Setup (including Git update)
+## 5) Step-by-Step Setup (Fresh Install from Scratch)
 
 ### 5.1 Prerequisites
-- Node.js (LTS)
-- PostgreSQL running locally
-- Git
+- [Node.js LTS](https://nodejs.org/) (v18 or higher recommended)
+- [PostgreSQL](https://www.postgresql.org/download/) running locally (v14 or higher)
+- [Git](https://git-scm.com/downloads)
 
 ---
 
-### 5.2 Update your local files from Git (important)
-
-If you already cloned the repository:
+### 5.2 Clone the repository
 
 ```bash
-cd website
-git fetch --all
-git checkout cursor/university-fund-system-framework-a3f3
-git pull
+git clone https://github.com/K-dot22/BANK_ing.git
+cd BANK_ing
 ```
 
-If you are cloning fresh:
+On PowerShell (Windows):
 
-```bash
-git clone -b cursor/university-fund-system-framework-a3f3 https://github.com/kzenith2019/website.git
-cd website
+```powershell
+git clone https://github.com/K-dot22/BANK_ing.git
+cd BANK_ing
 ```
 
 Then verify required backend files are present:
@@ -320,7 +316,7 @@ VITE_API_BASE_URL="http://localhost:5000/api"
 ## 7) Common Troubleshooting
 
 - **`Missing script: prisma:migrate`**
-  - Run `git checkout cursor/university-fund-system-framework-a3f3 && git pull`
+  - Run `git pull` to make sure you have the latest version of the repository.
   - Then run `npm run` in `server` to verify scripts exist.
 
 - **`Could not load --schema ... file not found`**
